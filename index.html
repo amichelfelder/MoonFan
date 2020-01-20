@@ -1,0 +1,180 @@
+<!DOCTYPE HTML>
+<html>
+<meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/main.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MoonFan</title>
+<link rel="icon" type="image/png" href="assets/img/favicon.png">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="assets/slick/slick-theme.css" />
+<link rel="stylesheet" type="text/css" href="assets/slick/slick.css" />
+<!-- SCROLL ANIMATION -->
+<script>
+    $(document).ready(function () {
+        $('a[href^="#"]').on('click', function (e) {
+            e.preventDefault();
+
+            var target = this.hash;
+            var $target = $(target);
+
+            $('html, body').stop().animate({
+                'scrollTop': $target.offset().top
+            }, 900, 'swing', function () {
+                window.location.hash = target;
+            });
+        });
+    });
+</script>
+
+</html>
+
+<body>
+    <nav class="main-menu">
+        <ul>
+            <li>
+                <a href="#home"><img src="assets/img/logo.svg" alt="logo"></a>
+            </li>
+            <div class="nav-items">
+                <li>
+                    <a href="#producto">
+                        Products
+                    </a>
+                </li>
+                <li>
+                    <a href="#especificaciones">
+                        Specifications
+                    </a>
+                </li>
+                <li>
+                    <a href="#contacto">
+                        Contact
+                    </a>
+                </li>
+            </div>
+        </ul>
+    </nav>
+    <nav class="menu-responsive">
+        <a class="hamburguer-menu">&#9776;</a>
+        <ul class="hide responsive-items">
+
+            <img class="logo-menu-responsive" src="assets/img/logo.svg">
+            <a class="close-menu"> &times;</a>
+            <li>
+                <a class="responsive-link" href="#producto">
+                    Products
+                </a>
+            </li>
+            <li>
+                <a class="responsive-link" href="#especificaciones">
+                    Specifications
+                </a>
+            </li>
+            <li>
+                <a class="responsive-link" href="#contacto">
+                    Contact
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <img class="logo-responsive" src="assets/img/logo.svg">
+    <div id="home" class="header-container">
+        <div class="slider slider1">
+            <div class="slider-content">
+                <h1 class="slider-text">3D Hologram Fan Display</h1>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        $(document).on('ready', function () {
+            $(".header-container").slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                infinite: true,
+                autoplay: true,
+                autoplaySpeed: 5000,
+                dots: true,
+            });
+        });
+    </script>
+    <div id="producto">
+        <div class="producto-container">
+            <div class="producto-item">
+                <img src="assets/img/icon01.png" alt="">
+                <p>Led Display ultra brightness</p>
+            </div>
+            <div class="producto-item">
+                <img src="assets/img/icon02.png" alt="">
+                <p>+ DS 30.000 HS Retail advertising version</p>
+            </div>
+            <div class="producto-item">
+                <img src="assets/img/icon03.png" alt="">
+                <p>Easy Cloud management</p>
+            </div>
+        </div>
+        <h2 class="producto-title">
+            Holographic 3D Fan Display<br>
+            <b>ADVERTISING PRO - X50</b>
+        </h2>
+        <h3 class="producto-subtitle">
+            50K pixel max resolution
+        </h3>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/39Sh8PwtPoo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="dron-section">
+            <img class="hide-mobile" src="assets/img/drones.jpg">
+            <img class="hide-web" src="assets/img/dron-responsive.jpg">
+        </div>
+    </div>
+    <div id="especificaciones">
+        <div class="boxes-container">
+            <div class="box">
+                <p>Control method WiFi Connect</p>
+            </div>
+            <div class="box">
+                <p>Four Axis with
+                    special led Beads</p>
+            </div>
+            <div class="box">
+                <p>HIGHEST QUALITY
+                    IMAGE</p>
+            </div>
+        </div>
+        <div class="banner-container">
+            <img src="assets/img/banner01.png">
+            <img src="assets/img/banner02.png">
+            <img src="assets/img/banner03.png">
+        </div>
+    </div>
+    <div id="contacto">
+        <div class="contacto">
+            <h2>THEY TRUST IN US</h2>
+            <div class="empresas-container">
+                <img src="assets/img/empresa01.png" class="empresa1" width="120px" alt="">
+                <img src="assets/img/empresa02.png" class="empresa2" width="250px" alt="">
+                <img src="assets/img/empresa03.png" class="empresa3" width="250px" alt="">
+                <img src="assets/img/empresa04.png" class="empresa4" width="200px" alt="">
+                <img src="assets/img/empresa05.png" class="empresa5" width="120px" alt="">
+            </div>
+            <div class="mail">
+                <a href="mailto:contacto@moonb95.com">contacto@moonb95.com</a>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="assets/slick/slick.min.js"></script>
+    <script type="text/javascript" src="assets/slick/slick.js"></script>
+    <script type="text/javascript" src="scripts.js"></script>
+    <script type="text/javascript">
+        $(document).on('ready', function () {
+            $(".gallery-container").slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                infinite: true,
+            });
+        });
+    </script>
+</body>
